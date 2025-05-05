@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ad-container">
+        <!-- Stage 1: Introduction -->
+        <div id="stage1">
+            <div class="headline">
+                WE ARE IN THE MIDDLE OF CONSPIRACY
+            </div>
+            
+            <div class="microphones">
+                <img src="assets/1.png" alt="Press Conference Microphones" class="mic-img">
+            </div>
+            
+            <div class="cta-text" id="start-game">
+                FIND THE MASTERMIND BEHIND THE RAGING CONSPIRACY AND REVEAL THE SECRET NOW
+            </div>
+        </div>
+        
+        <!-- Stage 2: Find the Target Game -->
+        <div id="stage2">
+            <div class="target-title">FIND THE TARGET:</div>
+            <div class="target-desc">
+                The guy is eating penne pollo pesto with his bodyguard at a cafe in the morning.
+            </div>
+            <div class="target-hint">Guess in which country he is now</div>
+            
+            <div class="map-container" id="map-container">
+                <img src="assets/map.png" alt="Europe Map" class="map-img" id="map-img">
+                
+                <!-- Pins on the map (positioned via JS) -->
+                <div class="pin" id="pin-italy" data-country="ITALY" style="top: 220px; left: 150px;"></div>
+                <div class="country-label" style="top: 240px; left: 148px;">ITALY</div>
+                
+                <div class="pin" id="pin-france" data-country="FRANCE" style="top: 180px; left: 100px;"></div>
+                <div class="country-label" style="top: 200px; left: 98px;">FRANCE</div>
+                
+                <div class="pin" id="pin-germany" data-country="GERMANY" style="top: 160px; left: 145px;"></div>
+                <div class="country-label" style="top: 180px; left: 143px;">GERMANY</div>
+                
+                <div class="pin" id="pin-spain" data-country="SPAIN" style="top: 240px; left: 60px;"></div>
+                <div class="country-label" style="top: 260px; left: 58px;">SPAIN</div>
+                
+                <div class="pin" id="pin-poland" data-country="POLAND" style="top: 150px; left: 190px;"></div>
+                <div class="country-label" style="top: 170px; left: 188px;">POLAND</div>
+            </div>
+            
+            <div class="drag-instruction">Drag the map to select the country pinpoint</div>
+            
+            <div class="feedback" id="feedback"></div>
+        </div>
+        
+        <!-- Stage 3: Final Result -->
+        <div id="stage3">
+            <div class="result-title">Good Job!</div>
+            <div class="result-desc">You just caught the mastermind of the conspiracy!</div>
+        </div>
+    </div>
+    
+      
+</body>
+<script src="script.js"></script>
+</html>
