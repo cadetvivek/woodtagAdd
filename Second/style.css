@@ -94,7 +94,7 @@ body {
     transform: translateY(0);
 }
 
-/* Stage 2 Styles */
+
 #stage2 {
     position: absolute;
     width: 100%;
@@ -183,7 +183,7 @@ body {
     margin: 10px 0;
 }
 
-/* Stage 3 Styles */
+
 #stage3 {
     position: absolute;
     width: 100%;

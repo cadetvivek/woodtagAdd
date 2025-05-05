@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('stage1').classList.add('active');
     }, 500);
     
-    // Variables for map dragging
+   
     let isDragging = false;
     let startX, startY, scrollLeft, scrollTop;
     let currentQuestion = 1;
     
-    // Event listener for starting the game
+   
     document.getElementById('start-game').addEventListener('click', function() {
         document.getElementById('stage1').style.display = 'none';
         document.getElementById('stage2').style.display = 'flex';
     });
     
-    // Map dragging functionality
+    
     const mapContainer = document.getElementById('map-container');
     const mapImg = document.getElementById('map-img');
     
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mapImg.style.top = `${scrollTop + walkY}px`;
     });
     
-    // Handle pin clicks
+   
     const pins = document.querySelectorAll('.pin');
     const feedback = document.getElementById('feedback');
     const targetDesc = document.querySelector('.target-desc');
